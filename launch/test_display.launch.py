@@ -58,5 +58,3 @@ def generate_launch_description():
             package='mai',
             executable='test_state_subscriber.py'),
     ])
-
-# print(generate_launch_description())
