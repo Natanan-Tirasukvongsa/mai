@@ -45,6 +45,7 @@ ament_python_install_package(${PROJECT_NAME})
 
 # Install Python executables
 install(PROGRAMS
+  launch/display.launch.py
   launch/test_traj_launch.py
   launch/test_display.launch.py
   scripts/py_node.py

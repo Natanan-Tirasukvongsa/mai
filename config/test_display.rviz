@@ -53,8 +53,6 @@ Visualization Manager:
           Value: true
         camera_link:
           Value: true
-        odom:
-          Value: true
       Marker Scale: 1
       Name: TF
       Show Arrows: true
@@ -64,8 +62,6 @@ Visualization Manager:
         base_link:
           camera_link:
             {}
-        odom:
-          {}
       Update Interval: 0
       Value: true
     - Alpha: 1
@@ -104,7 +100,7 @@ Visualization Manager:
   Enabled: true
   Global Options:
     Background Color: 48; 48; 48
-    Fixed Frame: odom
+    Fixed Frame: base_link
     Frame Rate: 30
   Name: root
   Tools:
@@ -144,7 +140,7 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz_default_plugins/Orbit
-      Distance: 8.007173538208008
+      Distance: 0.6947780251502991
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.05999999865889549
         Stereo Focal Distance: 1
@@ -159,10 +155,10 @@ Visualization Manager:
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.009999999776482582
-      Pitch: 0.49979710578918457
+      Pitch: 0.8297969102859497
       Target Frame: <Fixed Frame>
       Value: Orbit (rviz)
-      Yaw: 4.043571472167969
+      Yaw: 4.773582935333252
     Saved: ~
 Window Geometry:
   Displays:

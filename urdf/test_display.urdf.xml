@@ -17,11 +17,11 @@
         <box size="0.01 0.01 0.01"/>
       </geometry>
     </visual>
-    <collision>
+    <!-- <collision>
       <geometry>
         <box size="0.01 0.01 0.01"/>
       </geometry>
-    </collision>
+    </collision> -->
   </link>
 
   <link name="camera_link">
@@ -32,11 +32,11 @@
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <material name="white"/>
     </visual>
-    <collision>
+    <!-- <collision>
       <geometry>
         <box size="0.07 0.05 0.05"/>
       </geometry>
-    </collision>
+    </collision> -->
     <inertial>
       <mass value="0.01"/>
       <inertia ixx="1e-3" ixy="0.0" ixz="0.0" iyy="1e-3" iyz="0.0" izz="1e-3"/>

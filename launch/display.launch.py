@@ -6,6 +6,7 @@ from launch import LaunchDescription
 from launch.actions import DeclareLaunchArgument
 from launch.substitutions import LaunchConfiguration
 from launch_ros.actions import Node
+import xacro
 
 def generate_launch_description():
 
@@ -14,12 +15,16 @@ def generate_launch_description():
     pkg_dir = os.popen('/bin/bash -c "source /usr/share/colcon_cd/function/colcon_cd.sh && \
         colcon_cd %s && pwd"' % pkg_name).read().strip()
 
-    urdf_file_name = 'urdf/test_display.urdf.xml'
+    urdf_file_name = 'urdf/pr2.urdf.xacro'
     urdf = os.path.join(
         get_package_share_directory(pkg_name),
         urdf_file_name)
     with open(urdf, 'r') as infp:
         robot_desc = infp.read() 
+    
+    doc = xacro.parse(open(urdf))
+    xacro.process_doc(doc)
+    params = {'robot_description': doc.toxml()}
 
     return LaunchDescription([
         DeclareLaunchArgument(
@@ -31,20 +36,17 @@ def generate_launch_description():
             executable='robot_state_publisher',
             name='robot_state_publisher',
             output='screen',
-            parameters=[{'use_sim_time': use_sim_time, 'robot_description': robot_desc}],
-            arguments=[urdf]),
-
-        # Node(
-        #     package='joint_state_publisher',
-        #     executable='joint_state_publisher',
-        #     name='joint_state_publisher',
-        #     output='screen',
-        #     parameters=[{'use_sim_time': use_sim_time}]),
+            parameters=[{'use_sim_time': use_sim_time, 'robot_description': robot_desc},params],
+            arguments=[urdf],
+            ),
+            
 
         Node(
-            package='mai',
-            executable='pub_test_traj.py',
-        ),
+            package='joint_state_publisher',
+            executable='joint_state_publisher',
+            name='joint_state_publisher',
+            output='screen',
+            parameters=[{'use_sim_time': use_sim_time}]),
         
         Node(
             package='rviz2',
@@ -54,7 +56,4 @@ def generate_launch_description():
             arguments=['-d', [os.path.join(pkg_dir, 'config', 'test_display.rviz')]]
         ),
 
-        Node(
-            package='mai',
-            executable='test_state_subscriber.py'),
     ])

@@ -21,7 +21,7 @@ class MinimalPublisher(Node):
         # over a topic named topic, and that the “queue size” is 10
         self.publisher_ = self.create_publisher(Float32, 'traj_test', 10)
         # a timer is created with a callback to execute every 0.5 seconds
-        timer_period = 0.5  # seconds
+        timer_period = 0.01  # seconds
         self.timer = self.create_timer(timer_period, self.timer_callback)
         # self.i is a counter used in the callback
         # self.i = 0
@@ -45,7 +45,7 @@ class MinimalPublisher(Node):
 
     # timer_callback creates a message with the counter value appended, 
     def timer_callback(self):
-        self.trajectory(pi,0.0,5,2)
+        self.trajectory(pi,0.0,0.5,0.2)
         msg = Float32()
         msg.data = float(self.desire_angle)
         self.publisher_.publish(msg)
@@ -55,6 +55,7 @@ class MinimalPublisher(Node):
     
     def trajectory(self,stop_angle1,stop_angle2,velo_max,acc_max):
         if (self.get_clock().now().nanoseconds - self.timestamp >= 500000):
+            # nanosecond
             self.timestamp = self.get_clock().now().nanoseconds
             if self.param_set == 1 and self.initial == 1:
                 self.stop_angle = stop_angle1
@@ -70,15 +71,20 @@ class MinimalPublisher(Node):
                 self.get_logger().info('param set2')
 
             if (self.initial == 1 and self.stop_angle - self.start_angle != 0):
-                self.tau_max = 15/8*(self.stop_angle - self.start_angle)/self.velo_max if 15/8*(self.stop_angle - self.start_angle)/self.velo_max >= m.sqrt(abs(((10*m.pow(3+m.sqrt(3),1))-(5*m.pow(3+m.sqrt(3),2))+(5*m.pow(3+m.sqrt(3),3)/9))*(self.stop_angle-self.start_angle)/self.acc_max)) else m.sqrt(abs(((10*m.pow(3+m.sqrt(3),1))-(5*m.pow(3+m.sqrt(3),2))+(5*m.pow(3+m.sqrt(3),3)/9))*(self.stop_angle-self.start_angle)/self.acc_max))
+                if 15/8*(self.stop_angle - self.start_angle)/self.velo_max >= m.sqrt(abs(((10*m.pow(3+m.sqrt(3),1))-(5*m.pow(3+m.sqrt(3),2))+(5*m.pow(3+m.sqrt(3),3)/9))*(self.stop_angle-self.start_angle)/self.acc_max)) :
+                    # second
+                    self.tau_max = 15/8*(self.stop_angle - self.start_angle)/self.velo_max
+                else :
+                    # second
+                    self.tau_max = m.sqrt(abs(((10*m.pow(3+m.sqrt(3),1))-(5*m.pow(3+m.sqrt(3),2))+(5*m.pow(3+m.sqrt(3),3)/9))*(self.stop_angle-self.start_angle)/self.acc_max)) 
                 self.c0 = self.start_angle
                 self.c1 = 0
                 self.c2 = 0
-                self.c3 = 10*((self.stop_angle-self.start_angle)/m.pow(self.tau_max,3))
-                self.c4 = 15*((self.start_angle-self.stop_angle)/m.pow(self.tau_max,4))
-                self.c5 = 6*((self.stop_angle-self.start_angle)/m.pow(self.tau_max,5))
+                self.c3 = 10*((self.stop_angle-self.start_angle)/(m.pow(self.tau_max,3)))
+                self.c4 = 15*((self.start_angle-self.stop_angle)/(m.pow(self.tau_max,4)))
+                self.c5 = 6*((self.stop_angle-self.start_angle)/(m.pow(self.tau_max,5)))
 
-                self.time_initial = self.get_clock().now().nanoseconds*1e-9
+                self.time_initial = self.get_clock().now().nanoseconds*1e-9 # second
 
                 self.initial = 0
                 self.get_logger().info('initial set')
@@ -94,7 +100,7 @@ class MinimalPublisher(Node):
 
                 else:
                     self.get_logger().info('calculating')
-                    tau = self.get_clock().now().nanoseconds*1e-9-self.time_initial
+                    tau = self.get_clock().now().nanoseconds*1e-9-self.time_initial # second
                     self.desire_angle = self.c0*m.pow(tau,0)+self.c1*m.pow(tau,1)+self.c2*m.pow(tau,2)+self.c3*m.pow(tau,3)+self.c4*m.pow(tau,4)+self.c5*m.pow(tau,5)
 
 def main(args=None):
