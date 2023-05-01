@@ -25,30 +25,30 @@ class StatePublisher(Node):
         self.odom_trans.child_frame_id = 'camera_link'
 
         qos_profile = QoSProfile(depth=10)
-        # self.joint_pub = self.create_publisher(JointState, 'joint_states', qos_profile)
+        self.joint_pub = self.create_publisher(JointState, 'joint_states', qos_profile)
         self.broadcaster = TransformBroadcaster(self, qos=qos_profile)
 
         self.joint_state = JointState()
 
     def listener_callback(self, msg):
-        t = TransformStamped()
-        t.header.stamp = self.get_clock().now().to_msg()
-        t.header.frame_id = 'base_link'
-        t.child_frame_id = 'camera_link'
-        t.transform.rotation = euler_to_quaternion(0, 0, msg.data)
+        # t = TransformStamped()
+        # t.header.stamp = self.get_clock().now().to_msg()
+        # t.header.frame_id = 'base_link'
+        # t.child_frame_id = 'camera_link'
+        # t.transform.rotation = euler_to_quaternion(0, 0, msg.data)
 
         # Send the transformation
-        self.broadcaster.sendTransform(t)
+        # self.broadcaster.sendTransform(t)
         
 
         now = self.get_clock().now()
         self.joint_state.header.stamp = now.to_msg()
 
-        # self.odom_trans.header.stamp = now.to_msg()
-        # self.odom_trans.transform.rotation = euler_to_quaternion(0, 0, msg.data) # roll,pitch,yaw 
+        self.odom_trans.header.stamp = now.to_msg()
+        self.odom_trans.transform.rotation = euler_to_quaternion(0, 0, msg.data) # roll,pitch,yaw 
 
-        # self.joint_pub.publish(self.joint_state)
-        # self.broadcaster.sendTransform(self.odom_trans)
+        self.joint_pub.publish(self.joint_state)
+        self.broadcaster.sendTransform(self.odom_trans)
 
 def euler_to_quaternion(roll, pitch, yaw):
     qx = sin(roll/2) * cos(pitch/2) * cos(yaw/2) - cos(roll/2) * sin(pitch/2) * sin(yaw/2)
