@@ -2,7 +2,7 @@
 
 # The client node code uses sys.argv to get access to command line input arguments for the request.
 import sys
-from mai.srv import sendINV
+from example_interfaces.srv import sendINV
 import rclpy
 from rclpy.node import Node
 
