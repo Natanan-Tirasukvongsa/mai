@@ -307,7 +307,7 @@ class leg:
         #       -1  0  0  Pz
         #        0  0  0   1]
         tform = np.array([[0,-1,0, self.px],[0,0,1,-self.py],[-1,0,0,self.pz],[0,0,0,1]])
-        if self.left_or_right:
+        if int(self.left_or_right):
             self.link_leg_1 = -self.link_leg_1
         # 1) Perform some offsets
         tform[0][3] = -tform[0][3]

@@ -17,7 +17,9 @@ class SendFWService(Node):
     # The definition of the service callback receives the request data and returns the sum as a response.
     def send_fw_callback(self, request, response):
         response.success = True
-        self.get_logger().info('success process\nhip: %s' % (request.hip_input))
+        # self.get_logger().info('success process\nx: %f y: %f z: %f' % (request.x,request.y,request.z))
+        request.foot_input.append(request.isright)
+        self.get_logger().info('success process\nfoot: %s' % (request.foot_input))
 
         return response
     

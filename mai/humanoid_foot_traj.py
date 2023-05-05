@@ -56,7 +56,7 @@ class FootTrajPublisher(Node):
             else:
                 t_cont = (self.get_clock().now().nanoseconds - self.t_start_foot)*1e-9 # s
                 self.foot_x_traj = foot_input[0]+3*(foot_input[1]-foot_input[0])*(t_cont**2)/(self.t_s_foot**2)-2*(foot_input[1]-foot_input[0])*(t_cont**3)/(self.t_s_foot**3)
-                if foot_input[9]:
+                if int(foot_input[9]):
                     self.foot_y_traj = -foot_input[2]
                 else:
                     self.foot_y_traj = foot_input[2]
