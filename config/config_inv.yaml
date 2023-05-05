@@ -33,11 +33,11 @@ arm:
     target: 0.01
 
 leg:
-  link1: 1
-  link2: 1
-  link3: 1
-  link4: 1
-  link5: 1
+  link1: 15
+  link2: 10
+  link3: 10
+  link4: 10
+  link5: 10
   gamma2: -1
   gamma4: 1 
   gamma5: 1

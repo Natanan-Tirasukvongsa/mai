@@ -3,7 +3,7 @@ import numpy as np
 import yaml
 from yaml.loader import SafeLoader
 
-with open('config/config_inv.yaml', 'r') as file:
+with open('/home/natanan/ros2_ws/src/mai/config/config_inv.yaml', 'r') as file:
     param = yaml.load(file, Loader=SafeLoader)
 
 class head:
@@ -302,7 +302,7 @@ class leg:
     
     def inv_leg(self): 
         #        n  s  a  P 
-        #  R = [ 0 -1  0  Px
+        #  H = [ 0 -1  0  Px
         #        0  0  1 -Py      
         #       -1  0  0  Pz
         #        0  0  0   1]

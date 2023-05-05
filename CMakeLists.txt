@@ -21,9 +21,12 @@ find_package(ament_cmake_python REQUIRED)
 find_package(rclcpp REQUIRED)
 find_package(rclpy REQUIRED)
 find_package(robot_state_publisher REQUIRED)
-find_package(example_interfaces REQUIRED)
-find_package(builtin_interfaces REQUIRED)
 find_package(rosidl_default_generators REQUIRED)
+
+
+rosidl_generate_interfaces(${PROJECT_NAME} 
+  "srv/SendINV.srv" 
+)
 
 # uncomment the following section in order to fill in
 # further dependencies manually.
@@ -56,6 +59,8 @@ install(PROGRAMS
   mai/test_state_subscriber.py
   mai/ser_fw_xyz.py
   mai/cli_inv_th.py
+  mai/humanoid_foot_traj.py
+  mai/humanoid_inv.py
   DESTINATION lib/${PROJECT_NAME}
 )
 
@@ -63,11 +68,6 @@ install(
   DIRECTORY config include launch mai scripts src srv urdf 
   DESTINATION share/${PROJECT_NAME}
 )
-
-
-# rosidl_generate_interfaces(${PROJECT_NAME}
-#   "srv/sendINV.srv"
-# )
 
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)
