@@ -11,12 +11,12 @@ import numpy as np
 from humanoid_inv import leg
 
 # x_start,x_stop,y_start,y_stop,z_start,z_mid,z_stop,time_middle,time_walking,isRight
-foot_input = [0,7,15,15,0,2,0,2,4,True]
+# foot_input = [0,7,15,15,0,2,0,2,4,True]
 # x_start,x_mid,x_stop,vx_start,vx_mid,vx_stop,accx_start,y_start,y_stop,z_start,z_stop,vz_start,vz_stop,time_middle,time_walking
-hip_input = [0,1,3,0,1,0,0,0,0,25,30,0,0,2,4]
+# hip_input = [0,1,3,0,1,0,0,0,0,25,30,0,0,2,4]
 
 class FootTrajPublisher(Node):
-    def __init__(self):
+    def __init__(self, hip_input,foot_input):
         super().__init__('foot_traj_publisher')
         self.publisher_ = self.create_publisher(Float32MultiArray, 'foot_traj_topic', 10)
         timer_period = 0.01  # seconds
@@ -33,12 +33,15 @@ class FootTrajPublisher(Node):
         self.hip_x_traj = 0 # start x trajectory
         self.hip_y_traj = 0 # start y trajectory
         self.hip_z_traj = 0 # start z trajectory
+
+        self.foot_input = foot_input
+        self.hip_input = hip_input
         
     # timer_callback creates a message with the counter value appended, 
     def timer_callback(self):
         
         msg = Float32MultiArray()
-        msg.data = self.foot_joint_traj(foot_input,hip_input)
+        msg.data = self.foot_joint_traj(self.foot_input,self.hip_input)
         self.publisher_.publish(msg)
         self.get_logger().info('Publishing: "%s"' % msg.data)
     

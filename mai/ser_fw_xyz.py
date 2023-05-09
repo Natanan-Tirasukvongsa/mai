@@ -7,6 +7,8 @@ from mai.srv import SendINV
 import rclpy
 from rclpy.node import Node
 
+from humanoid_foot_traj import FootTrajPublisher
+
 class SendFWService(Node):
     def __init__(self):
         # class constructor initializes the node with the name send_xyz_service
@@ -19,8 +21,11 @@ class SendFWService(Node):
         response.success = True
         # self.get_logger().info('success process\nx: %f y: %f z: %f' % (request.x,request.y,request.z))
         request.foot_input.append(request.isright)
+
         self.get_logger().info('success process\nfoot: %s' % (request.foot_input))
 
+        FootTrajPublisher(request.hip_input,request.foot_input)
+        
         return response
     
 
