@@ -16,6 +16,8 @@ class SendFWService(Node):
         # Then, it creates a service and defines the type, name, and callback.
         self.srv = self.create_service(SendINV, 'humanoid_fw_inv', self.send_fw_callback)
 
+    
+
     # The definition of the service callback receives the request data and returns the sum as a response.
     def send_fw_callback(self, request, response):
         response.success = True
@@ -24,7 +26,8 @@ class SendFWService(Node):
 
         self.get_logger().info('success process\nfoot: %s' % (request.foot_input))
 
-        # FootTrajPublisher(request.hip_input,request.foot_input)
+        # self is inherit class SendFWService(Node)
+        FootTrajPublisher(self,request.hip_input,request.foot_input)
         
         return response
     
