@@ -104,7 +104,7 @@ gedit humanoid_inv.py
 ```
 with open('/home/Name/ros2_ws/src/mai/config/config_inv.yaml', 'r') as file:
 ```
-- Save file (Ctel+s)
+- Save file (Ctrl+s)
 
 3. **Please Check : Python executables**
 - Open CMakeLists.txt
