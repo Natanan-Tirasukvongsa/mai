@@ -67,13 +67,16 @@ rqt
 |  :---: | 
 | rqt default window  | 
 4. Plugins -> Introspection -> Node Graph
-
 |![Screenshot from 2023-05-17 18-39-39](https://github.com/Natanan-Tirasukvongsa/mai/assets/78638430/ac6c72d1-4a30-4bb6-840f-8d2801c0782d)| 
 |  :---: | 
 | Trajectory publish and subscribe node| 
 
 5. Plugins -> Visualization -> Plot
 |![Screenshot from 2023-05-17 18-52-13](https://github.com/Natanan-Tirasukvongsa/mai/assets/78638430/a375923f-0579-4c17-a558-b9efd885bfb3)| 
+|  :---: | 
+| rqt plot| 
+6. Add Topic : /traj_test/data
+|![Screenshot from 2023-05-17 18-54-48](https://github.com/Natanan-Tirasukvongsa/mai/assets/78638430/2d841e79-61cf-4a51-992c-3ce8eb089eb8)| 
 |  :---: | 
 | rqt plot| 
 
