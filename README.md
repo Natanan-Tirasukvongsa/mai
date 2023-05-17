@@ -38,6 +38,11 @@ source install/local_setup.bash
 ```
 ros2 launch mai display.launch.py
 ```
+
+| ![Screenshot from 2023-05-17 18-29-40](https://github.com/Natanan-Tirasukvongsa/mai/assets/78638430/951df0da-461f-4135-9c1b-5da69374ba81) | 
+| -------- | 
+| URDF - Cylinder  | 
+
 ## Launch trajectory and display axis 
 1. Open New terminal
 2. Launch command line  
