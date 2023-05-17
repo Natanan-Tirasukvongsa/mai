@@ -63,6 +63,18 @@ ros2 launch mai test_traj_launch.py
 |  :---: | 
 | Trajectory  | 
 
+3. Open another terminal
+```
+rqt
+```
+|![Screenshot from 2023-05-17 18-43-00](https://github.com/Natanan-Tirasukvongsa/mai/assets/78638430/f7f921f2-68af-4d4e-9d64-cd9b22261ecc)| 
+|  :---: | 
+| rqt default window  | 
+4. select rqt plot
+|![Screenshot from 2023-05-17 18-43-00](https://github.com/Natanan-Tirasukvongsa/mai/assets/78638430/f7f921f2-68af-4d4e-9d64-cd9b22261ecc)| 
+|  :---: | 
+| rqt plot| 
+
 # Service and Action File
 ## Server and Client Trajectory
 1. copy config_inv.yaml path (**Name** is your computer name)
