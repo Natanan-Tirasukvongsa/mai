@@ -73,7 +73,7 @@ rqt
 | Trajectory publish and subscribe node| 
 
 5. Plugins -> Visualization -> Plot
-|![Screenshot from 2023-05-17 18-52-13](https://github.com/Natanan-Tirasukvongsa/mai/assets/78638430/a375923f-0579-4c17-a558-b9efd885bfb3) | 
+|![Screenshot from 2023-05-17 18-52-13](https://github.com/Natanan-Tirasukvongsa/mai/assets/78638430/a375923f-0579-4c17-a558-b9efd885bfb3)| 
 |  :---: | 
 | rqt plot| 
 
