@@ -72,6 +72,11 @@ with open('/home/Name/ros2_ws/src/mai/config/config_inv.yaml', 'r') as file:
 - Save file
 
 3. **Please Check : Python executables**
+- Open CMakeLists.txt
+```
+cd ~/ros2_ws/src/mai
+gedit CMakeLists.txt
+```
 - Add Python executables (if you have never had yet) <br />
 install(PROGRAMS <br />
   **mai/ser_fw_xyz_parent.py** <br />
