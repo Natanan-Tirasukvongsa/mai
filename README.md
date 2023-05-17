@@ -81,10 +81,12 @@ cd ~/ros2_ws/src/mai
 gedit CMakeLists.txt
 ```
 - Add other Python executables (if you have never had yet) <br />
+```
 install(PROGRAMS <br />
   **mai/ser_fw_xyz_parent.py** <br />
   **mai/humanoid_foot_traj_inherit_ser.py** <br />
 ) <br />
+```
 - if there are following python executables, you can skip
 
 4. **Please Check : Import file name** 
