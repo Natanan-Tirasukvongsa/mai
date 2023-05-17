@@ -92,10 +92,10 @@ rqt
 ```
 /home/Name/ros2_ws/src/mai/config/config_inv.yaml
 ```
-$${\color{white}White}$$
+
 
 2. Change yaml file directory in humanoid_inv.py (line 6) 
-- humanoid_inv.py is in /home/**Name**/ros2_ws/src/mai/mai/humanoid_inv.py 
+- humanoid_inv.py is in /home/$${\color{lightblue}Name}$$/ros2_ws/src/mai/mai/humanoid_inv.py 
 - Open this file 
 ```
 cd ~/ros2_ws/src/mai/mai
