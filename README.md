@@ -6,7 +6,7 @@
 * **Contact** : tnatanan@gmail.com
 
 # Document
-File : [รายงานความคืบหน้า_ณัฐนันท์.pdf](https://github.com/Natanan-Tirasukvongsa/mai/files/11497313/_.pdf)
+* **File** : [รายงานความคืบหน้า_ณัฐนันท์.pdf](https://github.com/Natanan-Tirasukvongsa/mai/files/11497313/_.pdf)
 
 # Installation
 1. Install ROS2 Foxy by following this [tutorial](https://docs.ros.org/en/foxy/Installation.html)
