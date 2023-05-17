@@ -104,7 +104,7 @@ gedit humanoid_inv.py
 ```
 with open('/home/Name/ros2_ws/src/mai/config/config_inv.yaml', 'r') as file:
 ```
-- Save file
+- Save file (Ctel+s)
 
 3. **Please Check : Python executables**
 - Open CMakeLists.txt
@@ -123,6 +123,7 @@ install(PROGRAMS
 ) 
 ```
 > if there are following python executables, you can skip
+- Save file (Ctel+s)
 
 4. **Please Check : Import file name** 
 - open ser_fw_xyz_parent.py 
