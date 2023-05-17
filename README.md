@@ -83,7 +83,7 @@ rqt
 
 |![Screenshot from 2023-05-17 18-54-48](https://github.com/Natanan-Tirasukvongsa/mai/assets/78638430/2d841e79-61cf-4a51-992c-3ce8eb089eb8)| 
 |  :---: | 
-| rqt plot| 
+| position trajectory| 
 
 # Service and Action File
 ## Server and Client Trajectory
