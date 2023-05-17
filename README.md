@@ -68,12 +68,12 @@ install(PROGRAMS <br />
   **mai/ser_fw_xyz_parent.py** <br />
   **mai/humanoid_foot_traj_inherit_ser.py** <br />
 ) <br />
-- if there are following python executables, you pass this process
+- if there are following python executables, you can skip
 
 4. **Please Check : import file name** 
 - open ser_fw_xyz_parent.py 
 - Change **humanoid_foot_traj** to **humanoid_foot_traj_inherit_ser** (line 10)
-- if import file name is correct, you pass this process
+- if import file name is correct, you can skip
 5. run service node
 ```
 ros2 run mai ser_fw_xyz_parent.py 
