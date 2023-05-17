@@ -82,9 +82,10 @@ gedit CMakeLists.txt
 ```
 - Add other Python executables (if you have never had yet) 
 ```
+# Install Python executables
 install(PROGRAMS 
-  **mai/ser_fw_xyz_parent.py** 
-  **mai/humanoid_foot_traj_inherit_ser.py** 
+  mai/ser_fw_xyz_parent.py
+  mai/humanoid_foot_traj_inherit_ser.py 
 ) 
 ```
 - if there are following python executables, you can skip
