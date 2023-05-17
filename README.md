@@ -57,10 +57,19 @@ ros2 launch mai test_traj_launch.py
 ```
 
 2. Change yaml file directory in humanoid_inv.py (line 6)
-
+- humanoid_inv.py is in /home/**Name**/ros2_ws/src/mai/mai/humanoid_inv.py 
+```
+cd ~/ros2_ws/src/mai/mai
+```
+- Open this file 
+```
+gedit humanoid_inv.py
+```
+- Edit line 6
 ```
 with open('/home/Name/ros2_ws/src/mai/config/config_inv.yaml', 'r') as file:
 ```
+- Save file
 
 3. **Please Check : Python executables**
 - Add Python executables (if you have never had yet) <br />
