@@ -74,11 +74,20 @@ install(PROGRAMS <br />
 - open ser_fw_xyz_parent.py 
 - Change **humanoid_foot_traj** to **humanoid_foot_traj_inherit_ser** (line 10)
 - if import file name is correct, you can skip
-5. run service node
+5. Build the workspace with colcon
+```
+cd ..
+colcon build --packages-select mai
+```
+6. Source the setup file
+```
+source install/local_setup.bash
+```
+7. run service node
 ```
 ros2 run mai ser_fw_xyz_parent.py 
 ```
-6. run client node
+8. run client node
 ```
 ros2 run mai cli_inv_th.py 
 ```
