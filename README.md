@@ -112,7 +112,9 @@ with open('/home/Name/ros2_ws/src/mai/config/config_inv.yaml', 'r') as file:
 cd ~/ros2_ws/src/mai
 gedit CMakeLists.txt
 ```
-- Add other Python executables (if you have never had yet) 
+```diff
+! Add other Python executables (if you have never had yet) 
+```
 ```
 # Install Python executables
 install(PROGRAMS 
