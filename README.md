@@ -49,6 +49,10 @@ ros2 launch mai display.launch.py
 ```
 ros2 launch mai test_display.launch.py 
 ```
+|![Screenshot from 2023-05-17 18-32-49](https://github.com/Natanan-Tirasukvongsa/mai/assets/78638430/d3b1557d-4e8d-4ce4-9a72-e6d7f9f3925c) | 
+|  :---: | 
+| Trajectory  | 
+
 ## Launch only trajectory
 1. Open New terminal
 2. Launch command line  
