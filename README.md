@@ -2,7 +2,7 @@
 * Author : Natanan Tirasukvongsa (Mai)
 * Package : mai
 * Detail : Ubuntu 20.04 Lts, ROS2 (Foxy)
-* Place : Thavida Lab (Humanoid soccer RoboCup), KMUTT, Thailand
+* Place : Thavida Lab (Humanoid Soccer RoboCup), KMUTT, Thailand
 * Contact : tnatanan@gmail.com
 
 # Installation
