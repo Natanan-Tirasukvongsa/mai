@@ -59,8 +59,19 @@ ros2 launch mai test_traj_launch.py
 
 with open('/home/**Name**/ros2_ws/src/mai/config/config_inv.yaml', 'r') as file:
 
-4. run service node
+4. Add Python executables (if you have never had yet)
+install(PROGRAMS
+  ...
+  **mai/ser_fw_xyz_parent.py
+  mai/humanoid_foot_traj_inherit_ser.py**
+  ...
+)
+
+5. run service node
 ```
-ros2 run mai ser_fw_xyz.py 
+ros2 run mai ser_fw_xyz_parent.py 
 ```
-5. 
+6. run client node
+```
+ros2 run mai cli_inv_th.py 
+```
