@@ -128,7 +128,7 @@ install(PROGRAMS
 cd ~/ros2_ws/src/mai/mai
 gedit ser_fw_xyz_parent.py 
 ```
-$${\color{red}humanoid_foot_traj}$$
+${\color{red}humanoid_foot_traj}$
 - Change **humanoid_foot_traj** to **humanoid_foot_traj_inherit_ser** (line 10)
 > if import file name is correct, you can skip
 
