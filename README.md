@@ -65,7 +65,7 @@ with open('/home/Name/ros2_ws/src/mai/config/config_inv.yaml', 'r') as file:
 ```
 
 3. **Please Check : Python executables**
-- Add Python executables (if you have never had yet)
+- Add Python executables (if you have never had yet) \n
 install(PROGRAMS
   ...__
   **mai/ser_fw_xyz_parent.py**
