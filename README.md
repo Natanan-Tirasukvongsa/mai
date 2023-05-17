@@ -15,6 +15,6 @@ mkdir -p ~/ros2_ws/src
 
 ```
 cd ~/ros2_ws
-git clone src/
+git clone https://github.com/Natanan-Tirasukvongsa/mai.git src/
 ```
 4. 
