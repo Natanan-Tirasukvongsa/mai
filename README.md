@@ -77,7 +77,7 @@ with open('/home/Name/ros2_ws/src/mai/config/config_inv.yaml', 'r') as file:
 cd ~/ros2_ws/src/mai
 gedit CMakeLists.txt
 ```
-- Add Python executables (if you have never had yet) <br />
+- Add other Python executables (if you have never had yet) <br />
 install(PROGRAMS <br />
   **mai/ser_fw_xyz_parent.py** <br />
   **mai/humanoid_foot_traj_inherit_ser.py** <br />
