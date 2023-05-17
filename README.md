@@ -28,3 +28,39 @@ colcon build --packages-select mai
 source install/local_setup.bash
 ```
 
+# Launch File
+## Launch URDF file
+1. Open New terminal
+2. Launch command line 
+```
+ros2 launch mai display.launch.py
+```
+## Launch trajectory and display axis 
+1. Open New terminal
+2. Launch command line  
+```
+ros2 launch mai test_display.launch.py 
+```
+## Launch only trajectory
+1. Open New terminal
+2. Launch command line  
+```
+ros2 launch mai test_display.launch.py 
+```
+
+# Service and Action File
+## Run service file
+1. copy config_inv.yaml path
+
+/home/**Name**/ros2_ws/src/mai/config/config_inv.yaml
+- **Name** is your computer name
+
+3. Change yaml file directory in humanoid_inv.py (line 6)
+
+with open('/home/**Name**/ros2_ws/src/mai/config/config_inv.yaml', 'r') as file:
+
+4. run service node
+```
+ros2 run mai ser_fw_xyz.py 
+```
+5. 
