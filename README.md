@@ -14,7 +14,7 @@ mkdir -p ~/ros2_ws/src
 3. Clone mai package
 
 ```
-cd ~/ros2_ws
-git clone https://github.com/Natanan-Tirasukvongsa/mai.git src/
+cd ~/ros2_ws/src
+git clone https://github.com/Natanan-Tirasukvongsa/mai.git 
 ```
 4. 
