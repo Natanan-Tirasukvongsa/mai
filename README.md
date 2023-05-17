@@ -49,7 +49,7 @@ ros2 launch mai test_traj_launch.py
 ```
 
 # Service and Action File
-## Run service file
+## Server and Client Trajectory
 1. copy config_inv.yaml path
 
 ```
