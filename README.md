@@ -70,6 +70,7 @@ rqt
 |![Screenshot from 2023-05-17 18-39-39](https://github.com/Natanan-Tirasukvongsa/mai/assets/78638430/ac6c72d1-4a30-4bb6-840f-8d2801c0782d)| 
 |  :---: | 
 | Trajectory publish and subscribe node| 
+
 5. select rqt plot
 |![Screenshot from 2023-05-17 18-43-00](https://github.com/Natanan-Tirasukvongsa/mai/assets/78638430/f7f921f2-68af-4d4e-9d64-cd9b22261ecc)| 
 |  :---: | 
