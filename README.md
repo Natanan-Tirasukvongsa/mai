@@ -129,7 +129,7 @@ cd ~/ros2_ws/src/mai/mai
 gedit ser_fw_xyz_parent.py 
 ```
 ```diff
-- Change **humanoid_ foot _ traj** to **humanoid_foot_traj_inherit_ser** (line 10)
+- Change humanoid_foot_traj to humanoid_foot_traj_inherit_ser** (line 10)
 ```
 > if import file name is correct, you can skip
 
