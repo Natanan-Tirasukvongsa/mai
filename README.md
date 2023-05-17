@@ -1,9 +1,9 @@
 # About this package
-* Author : Natanan Tirasukvongsa (Mai)
-* Package : mai
-* Detail : Ubuntu 20.04 Lts, ROS2 (Foxy)
-* Place : Thavida Lab (Humanoid Soccer RoboCup), KMUTT, Thailand
-* Contact : tnatanan@gmail.com
+* **Author** : Natanan Tirasukvongsa (Mai)
+* **Package** : mai
+* **Detail** : Ubuntu 20.04 Lts, ROS2 (Foxy)
+* **Place** : Thavida Lab (Humanoid Soccer RoboCup), KMUTT, Thailand
+* **Contact** : tnatanan@gmail.com
 
 # Document
 File : [รายงานความคืบหน้า_ณัฐนันท์.pdf](https://github.com/Natanan-Tirasukvongsa/mai/files/11497313/_.pdf)
