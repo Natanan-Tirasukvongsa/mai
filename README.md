@@ -65,13 +65,13 @@ with open('/home/Name/ros2_ws/src/mai/config/config_inv.yaml', 'r') as file:
 ```
 
 3. **Please Check : Python executables**
-- Add Python executables (if you have never had yet)__
-install(PROGRAMS__
+- Add Python executables (if you have never had yet)
+install(PROGRAMS
   ...__
-  **mai/ser_fw_xyz_parent.py**__
-  **mai/humanoid_foot_traj_inherit_ser.py**__
-  ...__
-)__
+  **mai/ser_fw_xyz_parent.py**
+  **mai/humanoid_foot_traj_inherit_ser.py**
+  ...
+)
 - if there are following python executables, you pass this process
 
 4. **Please Check : import file name** 
