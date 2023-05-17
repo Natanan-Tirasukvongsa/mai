@@ -87,7 +87,7 @@ rqt
 
 # Service and Action File
 ## Server and Client Trajectory
-1. copy config_inv.yaml path (**Name** is your computer name)
+1. copy config_inv.yaml path (${\color{lightblue}Name}$ is your computer name)
 
 ```
 /home/Name/ros2_ws/src/mai/config/config_inv.yaml
