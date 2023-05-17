@@ -55,18 +55,24 @@ ros2 launch mai test_traj_launch.py
 /home/**Name**/ros2_ws/src/mai/config/config_inv.yaml
 - **Name** is your computer name
 
-3. Change yaml file directory in humanoid_inv.py (line 6)
+2. Change yaml file directory in humanoid_inv.py (line 6)
 
 with open('/home/**Name**/ros2_ws/src/mai/config/config_inv.yaml', 'r') as file:
 
-4. Add Python executables (if you have never had yet)
+3. **Please Check : Python executables**
+Add Python executables (if you have never had yet)
 install(PROGRAMS
   ...
   **mai/ser_fw_xyz_parent.py
   mai/humanoid_foot_traj_inherit_ser.py**
   ...
 )
+(if there are following python executables, you pass this process)
 
+4. **Please Check : import file name** 
+- open ser_fw_xyz_parent.py 
+- Change humanoid_foot_traj to humanoid_foot_traj_inherit_ser (line 10)
+- if import file name is correct, you pass this process
 5. run service node
 ```
 ros2 run mai ser_fw_xyz_parent.py 
