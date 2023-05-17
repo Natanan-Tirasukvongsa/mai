@@ -1,2 +1,2 @@
-# ROS2
-## mai package
+# About this package
+Author : Natanan Tirasukvongsa (Mai)
