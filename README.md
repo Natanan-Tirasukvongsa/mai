@@ -76,7 +76,7 @@ install(PROGRAMS <br />
 - if import file name is correct, you can skip
 5. Build the workspace with colcon
 ```
-cd ros2_ws
+cd ~/ros2_ws
 colcon build --packages-select mai
 ```
 6. Source the setup file
