@@ -45,7 +45,7 @@ ros2 launch mai test_display.launch.py
 1. Open New terminal
 2. Launch command line  
 ```
-ros2 launch mai test_display.launch.py 
+ros2 launch mai test_traj_launch.py 
 ```
 
 # Service and Action File
