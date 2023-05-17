@@ -67,6 +67,7 @@ rqt
 |  :---: | 
 | rqt default window  | 
 4. Plugins -> Introspection -> Node Graph
+
 |![Screenshot from 2023-05-17 18-39-39](https://github.com/Natanan-Tirasukvongsa/mai/assets/78638430/ac6c72d1-4a30-4bb6-840f-8d2801c0782d)| 
 |  :---: | 
 | Trajectory publish and subscribe node| 
