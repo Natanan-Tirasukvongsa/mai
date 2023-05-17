@@ -66,7 +66,7 @@ ros2 launch mai test_traj_launch.py
 cd ~/ros2_ws/src/mai/mai
 gedit humanoid_inv.py
 ```
-- Edit line 6
+- Edit line 6 (paste new directory)
 ```
 with open('/home/Name/ros2_ws/src/mai/config/config_inv.yaml', 'r') as file:
 ```
