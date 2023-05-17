@@ -83,11 +83,11 @@ colcon build --packages-select mai
 ```
 source install/local_setup.bash
 ```
-7. run service node
+7. Run service node
 ```
 ros2 run mai ser_fw_xyz_parent.py 
 ```
-8. run client node
+8. Open another terminal and run client node
 ```
 ros2 run mai cli_inv_th.py 
 ```
