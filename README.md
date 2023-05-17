@@ -5,3 +5,5 @@
 * Place : Thavida Lab (Humanoid soccer RoboCup), KMUTT, Thailand
 
 # Installation
+1. Install ROS2 Foxy by following this [tutorial](https://docs.ros.org/en/foxy/Installation.html)
+2. 
