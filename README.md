@@ -76,7 +76,7 @@ install(PROGRAMS
 
 4. **Please Check : import file name** 
 - open ser_fw_xyz_parent.py 
-- Change humanoid_foot_traj to humanoid_foot_traj_inherit_ser (line 10)
+- Change **humanoid_foot_traj** to **humanoid_foot_traj_inherit_ser** (line 10)
 - if import file name is correct, you pass this process
 5. run service node
 ```
