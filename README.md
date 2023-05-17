@@ -51,7 +51,7 @@ ros2 launch mai test_display.launch.py
 ```
 |![Screenshot from 2023-05-17 18-32-49](https://github.com/Natanan-Tirasukvongsa/mai/assets/78638430/d3b1557d-4e8d-4ce4-9a72-e6d7f9f3925c) | 
 |  :---: | 
-| Trajectory  | 
+| Axis moves by following trajectory  | 
 
 ## Launch only trajectory
 1. Open New terminal
@@ -59,6 +59,9 @@ ros2 launch mai test_display.launch.py
 ```
 ros2 launch mai test_traj_launch.py 
 ```
+|![Screenshot from 2023-05-17 18-39-39](https://github.com/Natanan-Tirasukvongsa/mai/assets/78638430/ac6c72d1-4a30-4bb6-840f-8d2801c0782d)| 
+|  :---: | 
+| Trajectory  | 
 
 # Service and Action File
 ## Server and Client Trajectory
