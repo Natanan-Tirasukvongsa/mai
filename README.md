@@ -138,7 +138,7 @@ ros2 run mai cli_inv_th.py
 | test_traj_launch.py | launch | publish and subscribe trajectory |
 | cli_inv_th.py | mai | cilent node |
 | humanoid_foot_traj_inherit_ser.py | mai | publish joint node |
-| humanoid_inv.py | mai | Inverse Kinemaics of Legs, Head, Arms |
+| humanoid_inv.py | mai | inverse kinemaics of legs, head, arms |
 | pub_test_traj.py | mai | publish trajectory node |
 | ser_fw_xyz_parent.py | mai | service node |
 | sub_test_traj.py | mai | subscribe node |
