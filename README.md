@@ -123,3 +123,12 @@ ros2 run mai ser_fw_xyz_parent.py
 ```
 ros2 run mai cli_inv_th.py 
 ```
+
+# References
+1. Ali, M.A., Park, H.A. and Lee, C.G., 2010, October. Closed-form inverse kinematic joint solution for humanoid robots. In 2010 IEEE/RSJ International Conference on Intelligent Robots and Systems (pp. 704-709). IEEE.
+2. Cuevas, E.V., Zaldívar, D. and Rojas, R., 2005, May. Dynamic control algorithm for a biped robot. In 7th International Conference on Control and Applications, Cancún, Mexico.
+3. Hashimoto, K., Hattori, K., Otani, T., Lim, H.O. and Takanishi, A., 2014. Foot placement modification for a biped humanoid robot with narrow feet. The Scientific World Journal, 2014.
+4. Hong, Y.D., 2019. Capture point-based controller using real-time zero moment point manipulation for stable bipedal walking in human environment. Sensors, 19(15), p.3407.
+5. Park, H.A., Ali, M.A. and Lee, C.G., 2012. Closed-form inverse kinematic position solution for humanoid robots. International Journal of Humanoid Robotics, 9(03), p.1250022.
+6. Rouxel, Q., Passault, G., Hofer, L., N’Guyen, S. and Ly, O., 2015. Rhoban hardware and software open source contributions for robocup humanoids. In Proceedings of 10th Workshop on Humanoid Soccer Robots, IEEE-RAS Int. Conference on Humanoid Robots, Seoul, Korea.
+7. Sugihara, T. and Yamamoto, T., 2017, September. Foot-guided agile control of a biped robot through ZMP manipulation. In 2017 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS) (pp. 4546-4551). IEEE.
