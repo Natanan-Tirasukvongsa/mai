@@ -128,14 +128,17 @@ ros2 run mai ser_fw_xyz_parent.py
 ```
 ros2 run mai cli_inv_th.py 
 ```
-# Other Files
+# All Files
 | File Name | Folder | Description |
 |  --- | --- | --- | 
 | config_inv.yaml  | config | Link Lenght Constant | 
 | test_display.rviz | config | rviz config |
+| display.launch.py | launch | show cylinder model |
+| test_display.launch.py | launch | show axis moivg by trajectory |
 | humanoid_inv.py | mai | Inverse Kinemaics of Legs, Head, Arms |
-| SendINV.srv| srv| structure your requests and responses |
-
+| SendINV.srv| srv | structure your requests and responses |
+| pr2.urdf.xacro| urdf | cylinder model |
+| test_display.urdf.xml | urdf | base_link to camera_link |
 
 # References
 1. Ali, M.A., Park, H.A. and Lee, C.G., 2010, October. Closed-form inverse kinematic joint solution for humanoid robots. In 2010 IEEE/RSJ International Conference on Intelligent Robots and Systems (pp. 704-709). IEEE.
