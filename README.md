@@ -9,7 +9,7 @@
 * **Independent Study Document** : [รายงานความคืบหน้า_ณัฐนันท์.pdf](https://github.com/Natanan-Tirasukvongsa/mai/files/11497313/_.pdf)
 * **Inverse Kinematics** : 
   - **Neck and Arms** : [Neck_Arm_inv.pdf](https://github.com/Natanan-Tirasukvongsa/mai/files/11523844/Neck_Arm_inv.pdf)
-  - **Legs (Ref.5) ** : [Leg_inv.pdf](https://github.com/Natanan-Tirasukvongsa/mai/files/11523846/Leg_inv.pdf)
+  - **Legs (Ref.5)** : [Leg_inv.pdf](https://github.com/Natanan-Tirasukvongsa/mai/files/11523846/Leg_inv.pdf)
 
 # Installation
 1. Install ROS2 Foxy by following this [tutorial](https://docs.ros.org/en/foxy/Installation.html)
