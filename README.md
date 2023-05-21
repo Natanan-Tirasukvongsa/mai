@@ -132,6 +132,10 @@ ros2 run mai cli_inv_th.py
 | File Name | Folder | Description |
 |  --- | --- | --- | 
 | config_inv.yaml  | config | Link Lenght Constant | 
+| test_display.rviz | config | rviz config |
+| humanoid_inv.py | mai | Inverse Kinemaics of Legs, Head, Arms |
+| SendINV.srv| srv| structure your requests and responses |
+
 
 # References
 1. Ali, M.A., Park, H.A. and Lee, C.G., 2010, October. Closed-form inverse kinematic joint solution for humanoid robots. In 2010 IEEE/RSJ International Conference on Intelligent Robots and Systems (pp. 704-709). IEEE.
