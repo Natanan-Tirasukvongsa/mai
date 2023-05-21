@@ -134,8 +134,15 @@ ros2 run mai cli_inv_th.py
 | config_inv.yaml  | config | Link Lenght Constant | 
 | test_display.rviz | config | rviz config |
 | display.launch.py | launch | show cylinder model |
-| test_display.launch.py | launch | show axis moivg by trajectory |
+| test_display.launch.py | launch | show axis moving by trajectory |
+| test_traj_launch.py | launch | publish and subscribe trajectory |
+| cli_inv_th.py | mai | cilent node |
+| humanoid_foot_traj_inherit_ser.py | mai | publish joint node |
 | humanoid_inv.py | mai | Inverse Kinemaics of Legs, Head, Arms |
+| pub_test_traj.py | mai | publish trajectory node |
+| ser_fw_xyz_parent.py | mai | service node |
+| sub_test_traj.py | mai | subscribe node |
+| test_state_subscriber.py | mai | state publisher node |
 | SendINV.srv| srv | structure your requests and responses |
 | pr2.urdf.xacro| urdf | cylinder model |
 | test_display.urdf.xml | urdf | base_link to camera_link |
