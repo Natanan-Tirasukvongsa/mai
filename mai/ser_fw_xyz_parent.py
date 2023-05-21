@@ -7,7 +7,7 @@ from mai.srv import SendINV
 import rclpy
 from rclpy.node import Node
 
-from humanoid_foot_traj import FootTrajPublisher
+from humanoid_foot_traj_inherit_ser import FootTrajPublisher
 
 class SendFWService(Node):
     def __init__(self):

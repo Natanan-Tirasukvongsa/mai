@@ -61,6 +61,8 @@ install(PROGRAMS
   mai/cli_inv_th.py
   mai/humanoid_foot_traj.py
   mai/humanoid_inv.py
+  mai/ser_fw_xyz_parent.py
+  mai/humanoid_foot_traj_inherit_ser.py 
   DESTINATION lib/${PROJECT_NAME}
 )
 
