@@ -106,51 +106,20 @@ with open('/home/Name/ros2_ws/src/mai/config/config_inv.yaml', 'r') as file:
 ```
 - Save file (Ctrl+s) 
 
-3. **Please Check : Python executables**
-- Open CMakeLists.txt
-```
-cd ~/ros2_ws/src/mai
-gedit CMakeLists.txt
-```
-```diff
-! Add other Python executables (if you have never had yet) 
-```
-```
-# Install Python executables
-install(PROGRAMS 
-  mai/ser_fw_xyz_parent.py
-  mai/humanoid_foot_traj_inherit_ser.py 
-) 
-```
-> if there are following python executables, you can skip
-- Save file (Ctrl+s) 
-
-4. **Please Check : Import file name** 
-- open ser_fw_xyz_parent.py 
-```
-cd ~/ros2_ws/src/mai/mai
-gedit ser_fw_xyz_parent.py 
-```
-```diff
-- Change humanoid_foot_traj to humanoid_foot_traj_inherit_ser (line 10)
-```
-> if import file name is correct, you can skip
-- Save file (Ctrl+s) 
-
-5. Build the workspace with colcon
+3. Build the workspace with colcon
 ```
 cd ~/ros2_ws
 colcon build --packages-select mai
 ```
-6. Source the setup file
+4. Source the setup file
 ```
 source install/local_setup.bash
 ```
-7. Run service node
+5. Run service node
 ```
 ros2 run mai ser_fw_xyz_parent.py 
 ```
-8. Open another terminal and run client node
+6. Open another terminal and run client node
 ```
 ros2 run mai cli_inv_th.py 
 ```
