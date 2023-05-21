@@ -85,7 +85,7 @@ rqt
 |  :---: | 
 | position trajectory| 
 
-# Service and Action File
+# Service File
 ## Server and Client Trajectory
 1. copy config_inv.yaml path (${\color{lightblue}Name}$ is your computer name)
 
