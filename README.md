@@ -10,6 +10,7 @@
 * **Inverse Kinematics** : 
   - **Neck and Arms** : [Neck_Arm_inv.pdf](https://github.com/Natanan-Tirasukvongsa/mai/files/11523844/Neck_Arm_inv.pdf)
   - **Legs (Ref.5)** : [Leg_inv.pdf](https://github.com/Natanan-Tirasukvongsa/mai/files/11523846/Leg_inv.pdf)
+  - **Legs code (animateInverseKinematics.mlx)** : [Leg_inv_code](https://www.mathworks.com/matlabcentral/fileexchange/64227-matlab-and-simulink-robotics-arena-walking-robot?fbclid=IwAR0nlCSdnjTbhy9UHVl0wyENLJEnmLJYmDqbswNy_pMGvrKcg6gTuJmmnpg)
 * **Trajectory (Ref.2)** : [Dynamic_control_algorithm_for_a_biped_robot.pdf](https://github.com/Natanan-Tirasukvongsa/mai/files/11523865/Dynamic_control_algorithm_for_a_biped_robot.1.pdf)
 
 
